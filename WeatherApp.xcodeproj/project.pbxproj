@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		44D327B6883E5F53C130B64B /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0454B667A2652B6DDFA9EEFF /* Pods_WeatherApp.framework */; };
 		4FE3364B203E074F006CFBCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3364A203E074F006CFBCF /* AppDelegate.swift */; };
-		4FE3364D203E074F006CFBCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3364C203E074F006CFBCF /* ViewController.swift */; };
-		4FE33650203E074F006CFBCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE3364E203E074F006CFBCF /* Main.storyboard */; };
 		4FE33652203E074F006CFBCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE33651203E074F006CFBCF /* Assets.xcassets */; };
 		4FE33655203E074F006CFBCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE33653203E074F006CFBCF /* LaunchScreen.storyboard */; };
 		4FE33660203E074F006CFBCF /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3365F203E074F006CFBCF /* WeatherAppTests.swift */; };
+		4FE3366E203E0C17006CFBCF /* GeoInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3366D203E0C17006CFBCF /* GeoInfoModel.swift */; };
+		4FE33670203E0C87006CFBCF /* TemperatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3366F203E0C87006CFBCF /* TemperatureModel.swift */; };
+		4FE33672203E0D99006CFBCF /* GeoInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33671203E0D99006CFBCF /* GeoInfoViewModel.swift */; };
+		4FE33674203E0DAD006CFBCF /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33673203E0DAD006CFBCF /* TemperatureViewModel.swift */; };
+		4FE33678203E0E5E006CFBCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33676203E0E5E006CFBCF /* HomeViewController.swift */; };
+		4FE33679203E0E5E006CFBCF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE33677203E0E5E006CFBCF /* HomeViewController.xib */; };
+		4FE3367C203EA90B006CFBCF /* GeoInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3367B203EA90B006CFBCF /* GeoInfoService.swift */; };
 		973608BB0F5105D0DE2C31CD /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B2266920597A23A3ED827 /* Pods_WeatherAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,14 +38,19 @@
 		312B2266920597A23A3ED827 /* Pods_WeatherAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE33647203E074F006CFBCF /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE3364A203E074F006CFBCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FE3364C203E074F006CFBCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4FE3364F203E074F006CFBCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE33651203E074F006CFBCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FE33654203E074F006CFBCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FE33656203E074F006CFBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE3365B203E074F006CFBCF /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE3365F203E074F006CFBCF /* WeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppTests.swift; sourceTree = "<group>"; };
 		4FE33661203E074F006CFBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FE3366D203E0C17006CFBCF /* GeoInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoModel.swift; sourceTree = "<group>"; };
+		4FE3366F203E0C87006CFBCF /* TemperatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureModel.swift; sourceTree = "<group>"; };
+		4FE33671203E0D99006CFBCF /* GeoInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoViewModel.swift; sourceTree = "<group>"; };
+		4FE33673203E0DAD006CFBCF /* TemperatureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
+		4FE33676203E0E5E006CFBCF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4FE33677203E0E5E006CFBCF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4FE3367B203EA90B006CFBCF /* GeoInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoService.swift; sourceTree = "<group>"; };
 		5A5FB787F4A325A6670A5F51 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		750B001F493D28B3C701C4A1 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A07331903BB41255E90EE2AE /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,8 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				4FE3364A203E074F006CFBCF /* AppDelegate.swift */,
-				4FE3364C203E074F006CFBCF /* ViewController.swift */,
-				4FE3364E203E074F006CFBCF /* Main.storyboard */,
+				4FE3366C203E0B62006CFBCF /* Models */,
+				4FE3367A203EA8CA006CFBCF /* Services */,
+				4FE3366B203E0AE0006CFBCF /* ViewModels */,
+				4FE3366A203E0AE0006CFBCF /* Views */,
 				4FE33651203E074F006CFBCF /* Assets.xcassets */,
 				4FE33653203E074F006CFBCF /* LaunchScreen.storyboard */,
 				4FE33656203E074F006CFBCF /* Info.plist */,
@@ -115,6 +127,49 @@
 				4FE33661203E074F006CFBCF /* Info.plist */,
 			);
 			path = WeatherAppTests;
+			sourceTree = "<group>";
+		};
+		4FE3366A203E0AE0006CFBCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FE33675203E0E53006CFBCF /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4FE3366B203E0AE0006CFBCF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FE33671203E0D99006CFBCF /* GeoInfoViewModel.swift */,
+				4FE33673203E0DAD006CFBCF /* TemperatureViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4FE3366C203E0B62006CFBCF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FE3366D203E0C17006CFBCF /* GeoInfoModel.swift */,
+				4FE3366F203E0C87006CFBCF /* TemperatureModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4FE33675203E0E53006CFBCF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4FE33676203E0E5E006CFBCF /* HomeViewController.swift */,
+				4FE33677203E0E5E006CFBCF /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4FE3367A203EA8CA006CFBCF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4FE3367B203EA90B006CFBCF /* GeoInfoService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D5B5A7A55CCC0A14DB1FFFDD /* Pods */ = {
@@ -219,7 +274,7 @@
 			files = (
 				4FE33655203E074F006CFBCF /* LaunchScreen.storyboard in Resources */,
 				4FE33652203E074F006CFBCF /* Assets.xcassets in Resources */,
-				4FE33650203E074F006CFBCF /* Main.storyboard in Resources */,
+				4FE33679203E0E5E006CFBCF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FE3364D203E074F006CFBCF /* ViewController.swift in Sources */,
+				4FE3367C203EA90B006CFBCF /* GeoInfoService.swift in Sources */,
+				4FE33670203E0C87006CFBCF /* TemperatureModel.swift in Sources */,
 				4FE3364B203E074F006CFBCF /* AppDelegate.swift in Sources */,
+				4FE3366E203E0C17006CFBCF /* GeoInfoModel.swift in Sources */,
+				4FE33672203E0D99006CFBCF /* GeoInfoViewModel.swift in Sources */,
+				4FE33678203E0E5E006CFBCF /* HomeViewController.swift in Sources */,
+				4FE33674203E0DAD006CFBCF /* TemperatureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4FE3364E203E074F006CFBCF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FE3364F203E074F006CFBCF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4FE33653203E074F006CFBCF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,7 +554,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aescriba.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,7 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aescriba.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
