@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         setupView()
-        
+        bindHistory()
     }
     
     private func setupView(){
@@ -32,15 +32,27 @@ class HomeViewController: UIViewController {
         geoInfoTableView.delegate = self
         geoInfoTableView.dataSource = self
         geoInfoTableView.register(UINib.init(nibName: "GeoInfoTableViewCell", bundle: nil), forCellReuseIdentifier: geoInfoCellIdentifier)
+        searchTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
+    private func bindHistory(){
+        geoInfoViewModel.retrieveGeoInfoHistory {
+            self.geoInfoTableView.reloadData()
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        if (textField.text?.count == 0){
+            geoInfoViewModel.retrieveGeoInfoHistory {
+                self.geoInfoTableView.reloadData()
+            }
+        }
     }
+    
     @IBAction func searchButtonPressed(_ sender: Any) {
         if let searchText = searchTextField.text{
             if !searchText.isEmpty {
+                searchTextField.resignFirstResponder()
                 LoadingOverlay.shared.showOverlay(view: self.view)
                 geoInfoViewModel.requestGeoInfoFor(location: searchText, completion: { error in
                     LoadingOverlay.shared.hideOverlay()
@@ -70,12 +82,12 @@ extension HomeViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
 extension HomeViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let geoInfo = geoInfoViewModel.geoInfoLocation[indexPath.row]
+        geoInfoViewModel.saveGeoInfo(geoInfoData: geoInfo)
         let detailViewController = DetailViewController.init(nibName: "DetailViewController", bundle: nil, geoInfo: geoInfo)
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }

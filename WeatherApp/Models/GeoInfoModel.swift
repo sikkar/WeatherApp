@@ -23,6 +23,10 @@ struct GeoInfoModel: Mappable {
     init?(map: Map) {
     }
     
+    init() {
+        
+    }
+    
     mutating func mapping(map: Map) {
         self.name <- map["name"]
         self.countryName <- map["countryName"]

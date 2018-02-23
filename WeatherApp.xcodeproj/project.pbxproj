@@ -26,6 +26,7 @@
 		4FE3368A203F5E59006CFBCF /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33689203F5E59006CFBCF /* LoadingOverlay.swift */; };
 		4FE3368C203FFA49006CFBCF /* TemperatureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3368B203FFA49006CFBCF /* TemperatureService.swift */; };
 		4FE3368E204022E9006CFBCF /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3368D204022E9006CFBCF /* ColorHelper.swift */; };
+		4FFCA5D020406581000A4B7E /* GeoInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FFCA5CE20406581000A4B7E /* GeoInfo.xcdatamodeld */; };
 		973608BB0F5105D0DE2C31CD /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B2266920597A23A3ED827 /* Pods_WeatherAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		4FE33689203F5E59006CFBCF /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		4FE3368B203FFA49006CFBCF /* TemperatureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureService.swift; sourceTree = "<group>"; };
 		4FE3368D204022E9006CFBCF /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		4FFCA5CF20406581000A4B7E /* GeoInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoInfo.xcdatamodel; sourceTree = "<group>"; };
 		5A5FB787F4A325A6670A5F51 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		750B001F493D28B3C701C4A1 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A07331903BB41255E90EE2AE /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				4FE3367A203EA8CA006CFBCF /* Services */,
 				4FE3366B203E0AE0006CFBCF /* ViewModels */,
 				4FE3366A203E0AE0006CFBCF /* Views */,
+				4FFCA5CD20406581000A4B7E /* CoreData */,
 				4FE33651203E074F006CFBCF /* Assets.xcassets */,
 				4FE33653203E074F006CFBCF /* LaunchScreen.storyboard */,
 				4FE33656203E074F006CFBCF /* Info.plist */,
@@ -215,6 +218,14 @@
 				4FE3368D204022E9006CFBCF /* ColorHelper.swift */,
 			);
 			path = ViewUtils;
+			sourceTree = "<group>";
+		};
+		4FFCA5CD20406581000A4B7E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4FFCA5CE20406581000A4B7E /* GeoInfo.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		D5B5A7A55CCC0A14DB1FFFDD /* Pods */ = {
@@ -451,6 +462,7 @@
 				4FE3368A203F5E59006CFBCF /* LoadingOverlay.swift in Sources */,
 				4FE33681203F5455006CFBCF /* GeoInfoTableViewCell.swift in Sources */,
 				4FE3364B203E074F006CFBCF /* AppDelegate.swift in Sources */,
+				4FFCA5D020406581000A4B7E /* GeoInfo.xcdatamodeld in Sources */,
 				4FE3366E203E0C17006CFBCF /* GeoInfoModel.swift in Sources */,
 				4FE3368E204022E9006CFBCF /* ColorHelper.swift in Sources */,
 				4FE33672203E0D99006CFBCF /* GeoInfoViewModel.swift in Sources */,
@@ -692,6 +704,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4FFCA5CE20406581000A4B7E /* GeoInfo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4FFCA5CF20406581000A4B7E /* GeoInfo.xcdatamodel */,
+			);
+			currentVersion = 4FFCA5CF20406581000A4B7E /* GeoInfo.xcdatamodel */;
+			path = GeoInfo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4FE3363F203E074F006CFBCF /* Project object */;
 }
