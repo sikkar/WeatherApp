@@ -29,10 +29,10 @@ struct GeoInfoModel: Mappable {
         self.population <- map["population"]
         self.lat <- map["lat"]
         self.lng <- map["lng"]
-        self.east <- map["east"]
-        self.south <- map["south"]
-        self.north <- map["north"]
-        self.west <- map["west"]
+        self.east <- map["bbox.east"]
+        self.south <- map["bbox.south"]
+        self.north <- map["bbox.north"]
+        self.west <- map["bbox.west"]
     }
     
 }

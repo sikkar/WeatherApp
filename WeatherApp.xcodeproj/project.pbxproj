@@ -19,6 +19,11 @@
 		4FE33678203E0E5E006CFBCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33676203E0E5E006CFBCF /* HomeViewController.swift */; };
 		4FE33679203E0E5E006CFBCF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE33677203E0E5E006CFBCF /* HomeViewController.xib */; };
 		4FE3367C203EA90B006CFBCF /* GeoInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3367B203EA90B006CFBCF /* GeoInfoService.swift */; };
+		4FE33681203F5455006CFBCF /* GeoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE3367F203F5455006CFBCF /* GeoInfoTableViewCell.swift */; };
+		4FE33682203F5455006CFBCF /* GeoInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE33680203F5455006CFBCF /* GeoInfoTableViewCell.xib */; };
+		4FE33686203F5E17006CFBCF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33684203F5E17006CFBCF /* DetailViewController.swift */; };
+		4FE33687203F5E17006CFBCF /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE33685203F5E17006CFBCF /* DetailViewController.xib */; };
+		4FE3368A203F5E59006CFBCF /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE33689203F5E59006CFBCF /* LoadingOverlay.swift */; };
 		973608BB0F5105D0DE2C31CD /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B2266920597A23A3ED827 /* Pods_WeatherAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +56,11 @@
 		4FE33676203E0E5E006CFBCF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4FE33677203E0E5E006CFBCF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		4FE3367B203EA90B006CFBCF /* GeoInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoService.swift; sourceTree = "<group>"; };
+		4FE3367F203F5455006CFBCF /* GeoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfoTableViewCell.swift; sourceTree = "<group>"; };
+		4FE33680203F5455006CFBCF /* GeoInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeoInfoTableViewCell.xib; sourceTree = "<group>"; };
+		4FE33684203F5E17006CFBCF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4FE33685203F5E17006CFBCF /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		4FE33689203F5E59006CFBCF /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 		5A5FB787F4A325A6670A5F51 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		750B001F493D28B3C701C4A1 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		A07331903BB41255E90EE2AE /* Pods-WeatherAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +142,9 @@
 		4FE3366A203E0AE0006CFBCF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4FE33688203F5E43006CFBCF /* ViewUtils */,
+				4FE3367E203F5433006CFBCF /* Cells */,
+				4FE33683203F5E03006CFBCF /* Detail */,
 				4FE33675203E0E53006CFBCF /* Home */,
 			);
 			path = Views;
@@ -170,6 +183,32 @@
 				4FE3367B203EA90B006CFBCF /* GeoInfoService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		4FE3367E203F5433006CFBCF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4FE3367F203F5455006CFBCF /* GeoInfoTableViewCell.swift */,
+				4FE33680203F5455006CFBCF /* GeoInfoTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4FE33683203F5E03006CFBCF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4FE33684203F5E17006CFBCF /* DetailViewController.swift */,
+				4FE33685203F5E17006CFBCF /* DetailViewController.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4FE33688203F5E43006CFBCF /* ViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				4FE33689203F5E59006CFBCF /* LoadingOverlay.swift */,
+			);
+			path = ViewUtils;
 			sourceTree = "<group>";
 		};
 		D5B5A7A55CCC0A14DB1FFFDD /* Pods */ = {
@@ -272,7 +311,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE33682203F5455006CFBCF /* GeoInfoTableViewCell.xib in Resources */,
 				4FE33655203E074F006CFBCF /* LaunchScreen.storyboard in Resources */,
+				4FE33687203F5E17006CFBCF /* DetailViewController.xib in Resources */,
 				4FE33652203E074F006CFBCF /* Assets.xcassets in Resources */,
 				4FE33679203E0E5E006CFBCF /* HomeViewController.xib in Resources */,
 			);
@@ -359,11 +400,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,8 +439,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE33686203F5E17006CFBCF /* DetailViewController.swift in Sources */,
 				4FE3367C203EA90B006CFBCF /* GeoInfoService.swift in Sources */,
 				4FE33670203E0C87006CFBCF /* TemperatureModel.swift in Sources */,
+				4FE3368A203F5E59006CFBCF /* LoadingOverlay.swift in Sources */,
+				4FE33681203F5455006CFBCF /* GeoInfoTableViewCell.swift in Sources */,
 				4FE3364B203E074F006CFBCF /* AppDelegate.swift in Sources */,
 				4FE3366E203E0C17006CFBCF /* GeoInfoModel.swift in Sources */,
 				4FE33672203E0D99006CFBCF /* GeoInfoViewModel.swift in Sources */,
