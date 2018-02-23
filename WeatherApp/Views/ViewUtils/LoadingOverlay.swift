@@ -17,7 +17,7 @@ class LoadingOverlay {
     static let shared: LoadingOverlay = LoadingOverlay()
     
     public func showOverlay(view: UIView) {
-        contentView = UIView(frame: UIScreen.main.bounds)
+        contentView = UIView(frame: view.bounds)
         let background = UIColor.gray
         contentView.backgroundColor = background.withAlphaComponent(0.4)
         activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)

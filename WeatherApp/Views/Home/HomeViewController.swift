@@ -75,7 +75,9 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let geoInfo = geoInfoViewModel.geoInfoLocation[indexPath.row]
+        let detailViewController = DetailViewController.init(nibName: "DetailViewController", bundle: nil, geoInfo: geoInfo)
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
